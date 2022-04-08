@@ -23,12 +23,17 @@
             android:layout_height="72dp">
 
             <TextView
+                app:layout_constraintTop_toTopOf="34dp"
+                app:layout_constraintStart_toEndOf="@id/card_title_image"
+                android:layout_marginLeft="16dp"
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lille Preben"
                 tools:layout_editor_absoluteX="128dp"
                 tools:layout_editor_absoluteY="16dp"
+                android:textSize="21sp"
+                android:textStyle="bold"
                 />
 
             <ImageView
@@ -36,10 +41,9 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="16dp"
-                tools:srcCompat="@tools:sample/avatars"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
